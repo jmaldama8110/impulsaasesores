@@ -1,0 +1,37 @@
+.services-riesgos {
+    position: relative;
+    min-height: 400px;
+}
+.services-riesgos .img-bk {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -99;
+}
+.services-riesgos .cover {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(247, 170, 36,0.7), rgb(247, 170, 36,0.7));
+    z-index: -98;
+}
+.services-riesgos .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services-riesgos .content h1 {
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+}
+.services-riesgos .content p {
+    color: white;
+    text-align: center;
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-semibold);
+
+}

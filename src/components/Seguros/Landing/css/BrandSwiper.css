@@ -1,0 +1,10 @@
+.brandswiper-seguros {
+  width: 1800px;
+}
+
+@media screen and (max-width: 980px) {
+    .brandswiper-seguros .brandswiper {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,52 @@
+/** Style button */
+.btn-seguros {
+    display: inline-block;
+    padding: 10px 30px; 
+    cursor: pointer;
+    background: var(--clr-blue);
+    color:white;
+    border: none;
+    border-radius:  5px;
+  }
+  .btn-seguros-outline {
+    display: inline-block;
+    padding: 10px 30px; 
+    cursor: pointer;
+    background: white;
+    color:black;
+    border: 1px solid var(--clr-blue);
+    border-radius:  5px;
+  }
+
+  .flex-content {
+    padding: 1em;
+  }
+  
+  .left-div {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-div{
+    /* height: 500px; */
+    width: 400px;
+  }
+  
+  .home-intro {
+    padding: 1em;
+    line-height: 1.5rem;
+    
+  }
+
+  .home-intro .buttons-array a {
+    margin-bottom: 1em;
+  }
+  .home-intro p {
+    margin-bottom: 1em;
+  }
+  
+ 
+
+  
+

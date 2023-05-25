@@ -1,0 +1,12 @@
+.centralslider {
+    padding: var(--section-padding-top) ;
+    color: var(--clr-blue);
+}
+.central-swiper .slide {
+    padding: 1em;
+}
+
+.buttons-array {
+    max-width: 500px;
+}
+

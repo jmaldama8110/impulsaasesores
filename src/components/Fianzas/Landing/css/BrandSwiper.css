@@ -1,0 +1,9 @@
+.brandswiper-fianzas {
+    width: 1800px;
+}
+@media screen and (max-width: 980px) {
+    .brandswiper {
+        display: none;
+    }
+    
+}

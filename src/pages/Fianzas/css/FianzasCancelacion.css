@@ -1,0 +1,15 @@
+/* Modifica el class original de Base.css */
+
+.left-box-tipo-fianza {
+    width: 300px;
+}
+.tipo-fianza-box p {
+    line-height: 2em;
+}
+.tipo-fianza-box li p {
+    text-align: left;
+}
+.tipo-fianza-box ol {
+    list-style: none;
+    counter-reset: item;
+}

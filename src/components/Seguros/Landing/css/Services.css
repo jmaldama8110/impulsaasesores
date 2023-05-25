@@ -1,0 +1,64 @@
+.services-seguros {
+    position: relative;
+    min-height: 600px;
+}
+.services-seguros .servicios-seguros-img {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -99;
+}
+.services-seguros .cover {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(0, 61, 166,0.7), rgb(0, 61, 166,0.7));
+    z-index: -98;
+}
+
+.services-seguros .content h1 {
+    color: white;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+    
+}
+.services-seguros .content .container {
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.services-seguros .content .container .box{
+    width: 350px;
+    height: 200px;
+    margin: 1em;
+    padding: 0 2em 0 2em;
+    text-align: center;
+    
+}
+.services-seguros .content .container .box img{
+    width: 60px;
+    height: 50px;
+}
+.services-seguros .content .container .box p {
+    color: white;
+    line-height: 1.7em;
+}
+.services-seguros .content .container .box .subtitle {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+}
+
+
+@media screen and (max-width: 980px) {
+    .services-seguros {
+        height: 1520px;
+    }
+    
+}
