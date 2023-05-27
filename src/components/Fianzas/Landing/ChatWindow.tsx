@@ -30,10 +30,12 @@ const [chatStarted, setChatStarted] = useState(false);
   useEffect(() => {
     socket.on('connect', () => {
         setIsConnected(true);
+        console.log('Connected...')
       });
 
       socket.on('disconnect', () => {
         setIsConnected(false);
+        console.log('Disconnected...')
       });
 
       socket.on('server-message',onServerMessage)
