@@ -7,7 +7,6 @@ export const app = express();
 const httpServer = createServer();
 const port = process.env.PORT || 4076
 
-
 const io = new Server(httpServer, {
   cors: {
     origin: "*"
@@ -22,10 +21,11 @@ const io = new Server(httpServer, {
 
 httpServer.listen(port, function (){
     console.log('Socket server started at port ' + port);
-    console.log(`${import.meta.env.BASE_URL}`);
+    
 });
 
 
 app.get('/api/test', (_, res) => 
-    res.json({ greeting: "Hello" }
+    res.json({ importMetaEnvBaseUrl: `${port}` }
+
 ))
