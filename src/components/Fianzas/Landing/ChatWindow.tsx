@@ -33,6 +33,7 @@ const [chatStarted, setChatStarted] = useState(false);
     socket.on('connect', () => {
         setIsConnected(true);
         console.log('Connected...')
+        console.log("recovered?", socket.recovered);
       });
 
       socket.on('disconnect', () => {
