@@ -123,22 +123,7 @@ const [chatStarted, setChatStarted] = useState(false);
   return (
     <div id="chat-window-component" className="chat-modal-window">
       <div className="chat-content">
-        {!isConnected && 
-          <>
-            <div className="chat-content-form">
-              <div className="chat-header">
-              <p>Bienvenido al chat de Impulsa Asesores!</p>
-                <span className="chat-close" onClick={onCloseModalWindow}>&times;</span>
-              </div>
-                <div className="chat-body-login">
-                    <div className="input-container">
-                      <h3>Mil disculpas, el chat no esta disponible
-                      </h3>
-                </div>
-              </div>
-            </div>
-          </>}
-        {!chatStarted && isConnected &&
+        {!chatStarted &&
           <div className="chat-content-form">
           <div className="chat-header">
             <p>Bienvenido al chat de Impulsa Asesores!</p>
@@ -173,13 +158,12 @@ const [chatStarted, setChatStarted] = useState(false);
                 <div className="chat-info-rooms">
                   <h3>Sala de Chat</h3>
                   <ul>
-                    <li>{room}</li>
+                    <li>{room} ({isConnected ? 'Ok' :'...'})</li>
                   </ul>
                 </div>
                 <div className="chat-info-users">
                   <h3>Usuarios</h3>
                   <ul>
-                    <li>Andrea</li>
                     <li>{user}</li>
                   </ul>
                 </div>
