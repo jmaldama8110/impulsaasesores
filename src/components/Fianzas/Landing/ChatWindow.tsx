@@ -5,7 +5,7 @@ import "./css/ContactForm.css";
 
 
 const socket = io(`${import.meta.env.VITE_API_URL}`);
-console.log(socket)
+
 
 interface MessageData {
   id: string;
